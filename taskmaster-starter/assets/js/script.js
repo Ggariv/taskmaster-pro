@@ -57,6 +57,7 @@ $(".list-group").on("click", "p", function() {
   textInput.trigger("focus");
   });
 
+// this blur event will trigger as soon as the user interacts with anything other than the <textarea> element.
 $(".list-group").on("blur", "textarea", function(){
   // get the textarea's current value/text
   var text = $(this)
